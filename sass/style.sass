@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css?family=Cardo:400i|Raleway:300,400,600,700&subset=latin-ext')
+*
+	box-sizing: border-box
+body
+	font-family: 'Raleway', sans-serif
+	margin: 0
+.container
+	max-width: 1000px
+	margin: 0 auto
+	padding: 0 15px
+.margin-60
+	margin: 60px auto
+a:link
+	text-decoration: none
+	color: #fff
+
+=font($size: 13, $weight: 400)
+	font-size: $size
+	font-weight: $weight
+
+/* jumbotron */
+.jumbotron
+	background-image: url(https://i.imgur.com/foqjuI8.png)
+	background-size: cover
+	background-position: center
+	height: 640px
+
+	nav
+		height: 50px
+		background: rgba(0, 0, 0, 0.1)
+
+		.brand 
+			display: inline-block
+			width: 189px
+			height: 24px
+			padding-top: 18px
+
+			.brand-link
+				display: inline-block
+				width: 189px
+				height: 24px
+
+		ul 
+			margin: 0
+			padding: 0
+			float: right
+
+			li
+				display: inline-block
+				padding: 10px 0 0 15px
+				height: 50px
+				line-height: 50px
+
+				a
+					+font(13px, 700)
+					text-transform: uppercase
+					cursor: pointer
+					transition: .2s
+					&:hover
+						color: #77798F
+				
+	.jumbotron-content
+		padding: 180px 50px 0 50px
+		text-align: center
+		color: #fff
+
+		h1 
+			+font(50px, 700)
+			text-transform: uppercase
+			padding: 0
+			margin: 0
+
+		p
+			+font(19px)
+			padding-bottom: 40px
+
+		button
+			cursor: pointer
+			color: #fff
+			+font(13px, 600)
+			background: #e84545
+			border: none
+			text-transform: uppercase
+			padding: 10px 30px
+			transition: .2s
+			&:hover
+				background: #c62323
+				color: #d7d7d7
+
+/* benefits */
+.benefits
+	text-align: center
+		
+	h4
+		+font(14px, 700)
+		text-transform: uppercase
+
+	p
+		+font(14px)
+
+/* media queries */
+@media (max-width: 767px) 
+	.jumbotron
+		height: auto
+
+		nav
+			height: auto
+
+			.brand
+				margin: 0 auto
+				display: block
+				padding: 15px 0 30px 0
+
+			ul
+				float: none
+				text-align: center
+
+				li
+					display: block
+					padding: 10px 0 5px 0
+					line-height: 15px
+					height: auto
+
+		.jumbotron-content 
+			padding: 50px 0
+			height: auto
+
+			h1
+				+font(35px)
+
+			p
+				+font(16px)
+				padding-bottom: 0
+
+
+@media (min-width: 768px) and (max-width: 991px)
+	.jumbotron-content
+		padding: 100px 50px 0 50px

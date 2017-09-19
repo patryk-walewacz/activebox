@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css?family=Cardo:400i|Raleway:300,400,600,700&subset=latin-ext");
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Raleway', sans-serif;
+  margin: 0; }
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 15px; }
+
+.margin-60 {
+  margin: 60px auto; }
+
+a:link {
+  text-decoration: none;
+  color: #fff; }
+
+/* jumbotron */
+.jumbotron {
+  background-image: url(https://i.imgur.com/foqjuI8.png);
+  background-size: cover;
+  background-position: center;
+  height: 640px; }
+  .jumbotron nav {
+    height: 50px;
+    background: rgba(0, 0, 0, 0.1); }
+    .jumbotron nav .brand {
+      display: inline-block;
+      width: 189px;
+      height: 24px;
+      padding-top: 18px; }
+      .jumbotron nav .brand .brand-link {
+        display: inline-block;
+        width: 189px;
+        height: 24px; }
+    .jumbotron nav ul {
+      margin: 0;
+      padding: 0;
+      float: right; }
+      .jumbotron nav ul li {
+        display: inline-block;
+        padding: 10px 0 0 15px;
+        height: 50px;
+        line-height: 50px; }
+        .jumbotron nav ul li a {
+          font-size: 13px;
+          font-weight: 700;
+          text-transform: uppercase;
+          cursor: pointer;
+          transition: .2s; }
+          .jumbotron nav ul li a:hover {
+            color: #77798F; }
+  .jumbotron .jumbotron-content {
+    padding: 180px 50px 0 50px;
+    text-align: center;
+    color: #fff; }
+    .jumbotron .jumbotron-content h1 {
+      font-size: 50px;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 0;
+      margin: 0; }
+    .jumbotron .jumbotron-content p {
+      font-size: 19px;
+      font-weight: 400;
+      padding-bottom: 40px; }
+    .jumbotron .jumbotron-content button {
+      cursor: pointer;
+      color: #fff;
+      font-size: 13px;
+      font-weight: 600;
+      background: #e84545;
+      border: none;
+      text-transform: uppercase;
+      padding: 10px 30px;
+      transition: .2s; }
+      .jumbotron .jumbotron-content button:hover {
+        background: #c62323;
+        color: #d7d7d7; }
+
+/* benefits */
+.benefits {
+  text-align: center; }
+  .benefits h4 {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase; }
+  .benefits p {
+    font-size: 14px;
+    font-weight: 400; }
+
+/* media queries */
+@media (max-width: 767px) {
+  .jumbotron {
+    height: auto; }
+    .jumbotron nav {
+      height: auto; }
+      .jumbotron nav .brand {
+        margin: 0 auto;
+        display: block;
+        padding: 15px 0 30px 0; }
+      .jumbotron nav ul {
+        float: none;
+        text-align: center; }
+        .jumbotron nav ul li {
+          display: block;
+          padding: 10px 0 5px 0;
+          line-height: 15px;
+          height: auto; }
+    .jumbotron .jumbotron-content {
+      padding: 50px 0;
+      height: auto; }
+      .jumbotron .jumbotron-content h1 {
+        font-size: 35px;
+        font-weight: 400; }
+      .jumbotron .jumbotron-content p {
+        font-size: 16px;
+        font-weight: 400;
+        padding-bottom: 0; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .jumbotron-content {
+    padding: 100px 50px 0 50px; } }
+
+/*# sourceMappingURL=style.css.map */
