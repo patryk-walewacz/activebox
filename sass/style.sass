@@ -25,6 +25,7 @@ a:link
 	background-size: cover
 	background-position: center
 	height: 640px
+	padding: 0
 
 	nav
 		height: 50px
@@ -92,10 +93,14 @@ a:link
 /* benefits */
 .benefits
 	text-align: center
+
+	[class*="col-"]
+		padding: 20px
 		
 	h4
 		+font(14px, 700)
 		text-transform: uppercase
+		margin: 20px 0 10px 0
 
 	p
 		+font(14px)
@@ -103,9 +108,9 @@ a:link
 
 /* gallery */
 .gallery
-
 	[class*="col-"]
 		position: relative
+		padding: 0.5px
 
 		img
 			width: 100%
@@ -139,8 +144,96 @@ a:link
 				margin-top: 10px
 
 
+/* crew */
+.crew
+	[class*="col-"]
+		padding: 0 10px
+
+	img
+		max-width: 100%
+		width: 230px
+		height: 230px
+		object-fit: cover
+
+	h3 
+		+font(22px)
+
+	h5
+		+font(13px)
+		color: #e84545
+
+	p
+		+font(14px)
+
+
+/* slider */
+.slider
+	height: 350px
+	background: #53354a;
+	color: #fff
+
+	.carousel
+		height: 350px
+
+		.slider-text
+			padding: 70px 120px 40px 40px
+
+		.carousel-indicators
+			width: 50%
+			right: 0
+			margin-left: 0
+
+		img 
+			width: 100%
+			height: 350px
+			object-fit: cover
+
+		p
+			+font(30px)
+			font-style: italic
+			font-family: 'Cardo', serif
+			margin: 0
+
+		span 
+			display: block
+			+font(13px, 700)
+			text-transform: uppercase
+			padding-top: 30px
+			letter-spacing: 1px
+
+.padding-0 
+	padding: 0
+
+
 /* media queries */
-@media (max-width: 768px)
+@media (max-width: 1199px)
+		.crew
+			text-align: center
+
+			[class*="col-"]
+				padding: 30px 20px
+
+		.slider
+			.carousel
+				.slider-text
+					padding: 70px 30px
+
+
+@media (max-width: 991px)
+	.jumbotron
+		.jumbotron-content
+			padding: 140px 50px 0 50px
+
+	.slider
+		height: auto
+		.carousel
+			height: auto
+				
+			img
+				height: 350px
+
+
+@media (max-width: 767px)
 	.jumbotron
 		height: auto
 
@@ -173,3 +266,15 @@ a:link
 				+font(16px)
 				padding-bottom: 0
 
+	.slider
+		.carousel
+			.carousel-text
+				padding: 40px 10px
+
+			p
+				font-size: 25px
+
+			span
+				font-size: 
+
+	
