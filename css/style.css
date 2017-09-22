@@ -67,20 +67,23 @@ a:link {
     .jumbotron .jumbotron-content p {
       font-size: 19px;
       font-weight: 400;
-      padding-bottom: 40px; }
-    .jumbotron .jumbotron-content button {
-      cursor: pointer;
-      color: #fff;
-      font-size: 13px;
-      font-weight: 600;
-      background: #e84545;
-      border: none;
-      text-transform: uppercase;
-      padding: 10px 30px;
-      transition: .2s; }
-      .jumbotron .jumbotron-content button:hover {
-        background: #c62323;
-        color: #d7d7d7; }
+      margin: 0;
+      padding-bottom: 60px; }
+
+.findout, .down-btn {
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  background: #e84545;
+  border: none;
+  text-transform: uppercase;
+  padding: 10px 30px;
+  transition: .2s; }
+  .findout:hover, .down-btn:hover {
+    background: #c62323;
+    color: #d7d7d7; }
 
 /* benefits */
 .benefits {
@@ -153,6 +156,31 @@ a:link {
   font-size: 14px;
   font-weight: 400; }
 
+.crew .social {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: #fff;
+  border: 1px solid #c6cacc;
+  text-align: center;
+  line-height: 32px;
+  transition: .3s; }
+  .crew .social:hover {
+    background: #c6cacc; }
+    .crew .social:hover .fa {
+      color: #fff; }
+  .crew .social a {
+    display: inline-block;
+    height: 32px;
+    width: 32px; }
+    .crew .social a .fa {
+      transition: .3s;
+      color: #c6cacc;
+      font-size: 16px; }
+
+.crew .social:first-of-type {
+  margin-right: 1px; }
+
 /* slider */
 .slider {
   height: 350px;
@@ -160,7 +188,7 @@ a:link {
   color: #fff; }
   .slider .carousel {
     height: 350px; }
-    .slider .carousel .slider-text {
+    .slider .carousel [class*="col-"]:last-of-type {
       padding: 70px 120px 40px 40px; }
     .slider .carousel .carousel-indicators {
       width: 50%;
@@ -183,9 +211,24 @@ a:link {
       text-transform: uppercase;
       padding-top: 30px;
       letter-spacing: 1px; }
+    .slider .carousel [class*="col-"]:first-of-type {
+      padding: 0; }
 
-.padding-0 {
-  padding: 0; }
+/* download */
+.download {
+  text-align: center; }
+  .download h1 {
+    font-size: 28px;
+    font-weight: 300;
+    margin: 0 0 20px 0; }
+  .download h4 {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 50px; }
+
+.down-btn {
+  padding: 10px 60px; }
 
 /* media queries */
 @media (max-width: 1199px) {
@@ -193,7 +236,7 @@ a:link {
     text-align: center; }
     .crew [class*="col-"] {
       padding: 30px 20px; }
-  .slider .carousel .slider-text {
+  .slider .carousel [class*="col-"]:last-of-type {
     padding: 70px 30px; } }
 
 @media (max-width: 991px) {
@@ -233,8 +276,8 @@ a:link {
         font-size: 16px;
         font-weight: 400;
         padding-bottom: 0; }
-  .slider .carousel .carousel-text {
-    padding: 40px 10px; }
+  .slider .carousel [class*="col-"]:last-of-type {
+    padding: 40px 15px; }
   .slider .carousel p {
     font-size: 25px; } }
 
