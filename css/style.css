@@ -15,8 +15,7 @@ body {
   margin: 60px auto; }
 
 a:link {
-  text-decoration: none;
-  color: #fff; }
+  text-decoration: none; }
 
 /* jumbotron */
 .jumbotron {
@@ -49,6 +48,7 @@ a:link {
         .jumbotron nav ul li a {
           font-size: 13px;
           font-weight: 700;
+          color: #fff;
           text-transform: uppercase;
           cursor: pointer;
           transition: .2s; }
