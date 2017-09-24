@@ -11,8 +11,8 @@ body {
   margin: 0 auto;
   padding: 0 15px; }
 
-.margin-60 {
-  margin: 60px auto; }
+.margin-80 {
+  margin: 80px auto; }
 
 a:link {
   text-decoration: none; }
@@ -72,7 +72,6 @@ a:link {
 
 .findout, .down-btn {
   border: none;
-  cursor: pointer;
   color: #fff;
   font-size: 13px;
   font-weight: 600;
@@ -178,9 +177,6 @@ a:link {
       color: #c6cacc;
       font-size: 16px; }
 
-.crew .social:first-of-type {
-  margin-right: 1px; }
-
 /* slider */
 .slider {
   height: 350px;
@@ -209,8 +205,7 @@ a:link {
       font-size: 13px;
       font-weight: 700;
       text-transform: uppercase;
-      padding-top: 30px;
-      letter-spacing: 1px; }
+      padding-top: 30px; }
     .slider .carousel [class*="col-"]:first-of-type {
       padding: 0; }
 
@@ -230,14 +225,62 @@ a:link {
 .down-btn {
   padding: 10px 60px; }
 
+/* footer */
+.contact {
+  background: #3a3e64;
+  padding: 50px 0 90px 0;
+  color: #fff;
+  text-align: center; }
+  .contact h2 {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase; }
+  .contact p {
+    font-size: 14px;
+    font-weight: 400;
+    opacity: 0.5; }
+  .contact button {
+    height: 40px;
+    width: 40px;
+    height: 40px;
+    background: #3a3e64;
+    border-color: #fff;
+    border-shadow: none;
+    transition: .3s; }
+    .contact button:hover {
+      background: #fff; }
+      .contact button:hover .fa {
+        color: #3a3e64; }
+    .contact button .fa {
+      font-size: 19px;
+      color: #fff;
+      transition: .3s; }
+
+.copyright {
+  background: #313454;
+  padding: 30px 15px;
+  text-align: center; }
+  .copyright p {
+    margin: 0;
+    color: #808080;
+    font-size: 14px;
+    font-weight: 400; }
+    .copyright p .fa {
+      color: #e84545;
+      font-size: 13px;
+      position: relative;
+      bottom: 1px; }
+  .copyright span {
+    color: #fff; }
+
 /* media queries */
 @media (max-width: 1199px) {
   .crew {
     text-align: center; }
     .crew [class*="col-"] {
       padding: 30px 20px; }
-  .slider .carousel [class*="col-"]:last-of-type {
-    padding: 70px 30px; } }
+    .crew .slider .carousel [class*="col-"]:last-of-type {
+      padding: 70px 30px; } }
 
 @media (max-width: 991px) {
   .jumbotron .jumbotron-content {
@@ -247,7 +290,11 @@ a:link {
     .slider .carousel {
       height: auto; }
       .slider .carousel img {
-        height: 350px; } }
+        height: 350px; }
+  .contact {
+    padding: 40px 0; }
+    .contact [class*="col-"] {
+      padding: 30px 15px; } }
 
 @media (max-width: 767px) {
   .jumbotron {

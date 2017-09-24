@@ -8,8 +8,8 @@ body
 	max-width: 1000px
 	margin: 0 auto
 	padding: 0 15px
-.margin-60
-	margin: 60px auto
+.margin-80
+	margin: 80px auto
 a:link
 	text-decoration: none
 
@@ -79,7 +79,6 @@ a:link
 
 .findout
 	border: none
-	cursor: pointer
 	color: #fff
 	+font(13px, 600)
 	background: #e84545
@@ -191,14 +190,11 @@ a:link
 				color: #c6cacc
 				font-size: 16px
 
-	.social:first-of-type
-		margin-right: 1px
-
 
 /* slider */
 .slider
 	height: 350px
-	background: #53354a;
+	background: #53354a
 	color: #fff
 
 	.carousel
@@ -228,7 +224,6 @@ a:link
 			+font(13px, 700)
 			text-transform: uppercase
 			padding-top: 30px
-			letter-spacing: 1px
 
 		[class*="col-"]:first-of-type
 			padding: 0
@@ -251,13 +246,68 @@ a:link
 	@extend .findout
 	padding: 10px 60px
 
+
+/* footer */
+.contact
+	background: #3a3e64
+	padding: 50px 0 90px 0
+	color: #fff
+	text-align: center
+
+	h2
+		+font(14px, 700)
+		text-transform: uppercase
+
+	p
+		+font(14px)
+		opacity: 0.5
+
+	button
+		height: 40px
+		width: 40px
+		height: 40px
+		background: #3a3e64
+		border-color: #fff
+		border-shadow: none
+		transition: .3s
+		&:hover
+			background: #fff
+			.fa
+				color: #3a3e64
+
+		.fa
+			font-size: 19px
+			color: #fff
+			transition: .3s
+
+.copyright
+	background: #313454
+	padding: 30px 15px
+	text-align: center
+
+	p
+		margin: 0
+		color: #808080
+		+font(14px)
+
+		.fa
+			color: #e84545
+			font-size: 13px
+			position: relative
+			bottom: 1px
+
+	span 
+		color: #fff
+		
+
+
 /* media queries */
 @media (max-width: 1199px)
-		.crew
-			text-align: center
+	.crew
+		text-align: center
 
-			[class*="col-"]
-				padding: 30px 20px
+		[class*="col-"]
+			padding: 30px 20px
 
 		.slider
 			.carousel
@@ -277,6 +327,12 @@ a:link
 				
 			img
 				height: 350px
+
+	.contact
+		padding: 40px 0
+
+		[class*="col-"]
+			padding: 30px 15px
 
 
 @media (max-width: 767px)
@@ -319,8 +375,4 @@ a:link
 
 			p
 				font-size: 25px
-
-			span
-				font-size: 
-
 	
