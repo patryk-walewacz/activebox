@@ -24,36 +24,28 @@ a:link {
   background-position: center;
   height: 640px;
   padding: 0; }
-  .jumbotron nav {
-    height: 50px;
-    background: rgba(0, 0, 0, 0.1); }
-    .jumbotron nav .brand {
+  .jumbotron nav .brand-link {
+    display: inline-block;
+    width: 189px;
+    height: 24px;
+    margin-top: 20px; }
+  .jumbotron nav ul {
+    margin: 0;
+    padding: 0;
+    float: right;
+    margin-top: 28px; }
+    .jumbotron nav ul li {
       display: inline-block;
-      width: 189px;
-      height: 24px;
-      padding-top: 18px; }
-      .jumbotron nav .brand .brand-link {
-        display: inline-block;
-        width: 189px;
-        height: 24px; }
-    .jumbotron nav ul {
-      margin: 0;
-      padding: 0;
-      float: right; }
-      .jumbotron nav ul li {
-        display: inline-block;
-        padding: 10px 0 0 18px;
-        height: 50px;
-        line-height: 50px; }
-        .jumbotron nav ul li a {
-          font-size: 13px;
-          font-weight: 700;
-          color: #fff;
-          text-transform: uppercase;
-          cursor: pointer;
-          transition: .2s; }
-          .jumbotron nav ul li a:hover {
-            color: #77798F; }
+      padding-left: 20px; }
+      .jumbotron nav ul li a {
+        font-size: 13px;
+        font-weight: 700;
+        color: #fff;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: .2s; }
+        .jumbotron nav ul li a:hover {
+          color: #77798F; }
   .jumbotron .jumbotron-content {
     padding: 180px 50px 0 50px;
     text-align: center;
@@ -88,7 +80,7 @@ a:link {
 .benefits {
   text-align: center; }
   .benefits [class*="col-"] {
-    padding: 20px; }
+    padding: 40px 30px; }
   .benefits h4 {
     font-size: 14px;
     font-weight: 700;
@@ -109,15 +101,15 @@ a:link {
     position: relative;
     z-index: 20; }
   .gallery [class*="col-"] .red-layer {
-    width: 100%;
+    width: calc(100% - 1px);
     height: 250px;
     background: rgba(232, 69, 69, 0.9);
     color: #fff;
     text-align: center;
     opacity: 0;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 0.5px;
+    left: 0.5px;
     z-index: 100;
     transition: .5s; }
     .gallery [class*="col-"] .red-layer:hover {
@@ -186,6 +178,8 @@ a:link {
     height: 350px; }
     .slider .carousel [class*="col-"]:last-of-type {
       padding: 70px 120px 40px 40px; }
+    .slider .carousel .row {
+      margin: 0; }
     .slider .carousel .carousel-indicators {
       width: 50%;
       right: 0;
@@ -240,12 +234,10 @@ a:link {
     font-weight: 400;
     opacity: 0.5; }
   .contact button {
-    height: 40px;
     width: 40px;
     height: 40px;
     background: #3a3e64;
-    border-color: #fff;
-    border-shadow: none;
+    border: 2px solid #fff;
     transition: .3s; }
     .contact button:hover {
       background: #fff; }
@@ -299,22 +291,38 @@ a:link {
 @media (max-width: 767px) {
   .jumbotron {
     height: auto; }
-    .jumbotron nav {
-      height: auto; }
-      .jumbotron nav .brand {
-        margin: 0 auto;
+    .jumbotron nav .brand-link {
+      display: block;
+      margin: 20px auto 5px auto; }
+    .jumbotron nav ul {
+      float: none;
+      text-align: center; }
+      .jumbotron nav ul li {
         display: block;
-        padding: 15px 0 30px 0; }
-      .jumbotron nav ul {
-        float: none;
-        text-align: center; }
-        .jumbotron nav ul li {
+        padding: 0;
+        height: 40px;
+        width: 150px;
+        margin: 0 auto; }
+        .jumbotron nav ul li:after {
+          content: "";
           display: block;
-          padding: 10px 0 5px 0;
-          line-height: 15px;
-          height: auto; }
+          width: 150px;
+          height: 1px;
+          border-top: 1px dotted #fff;
+          margin: 0 auto; }
+        .jumbotron nav ul li a {
+          display: block;
+          font-size: 16px;
+          font-weight: 400;
+          width: 100%;
+          height: 40px;
+          line-height: 40px; }
+          .jumbotron nav ul li a:hover {
+            color: #fff; }
+      .jumbotron nav ul li:last-of-type:after {
+        display: none; }
     .jumbotron .jumbotron-content {
-      padding: 50px 0;
+      padding: 80px 0 40px 0;
       height: auto; }
       .jumbotron .jumbotron-content h1 {
         font-size: 35px;
@@ -324,8 +332,13 @@ a:link {
         font-weight: 400;
         padding-bottom: 30px; }
   .slider .carousel [class*="col-"]:last-of-type {
-    padding: 40px 15px; }
+    padding: 40px 20px; }
+  .slider .carousel .carousel-indicators {
+    width: 100%;
+    left: 0; }
   .slider .carousel p {
-    font-size: 25px; } }
+    font-size: 25px; }
+  .slider .carousel span {
+    padding-bottom: 25px; } }
 
 /*# sourceMappingURL=style.css.map */
