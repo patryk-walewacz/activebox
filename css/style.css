@@ -283,6 +283,11 @@ a:link {
       height: auto; }
       .slider .carousel img {
         height: 350px; }
+      .slider .carousel .carousel-indicators {
+        width: 100%;
+        left: 0; }
+      .slider .carousel span {
+        padding-bottom: 25px; }
   .contact {
     padding: 40px 0; }
     .contact [class*="col-"] {
@@ -333,12 +338,7 @@ a:link {
         padding-bottom: 30px; }
   .slider .carousel [class*="col-"]:last-of-type {
     padding: 40px 20px; }
-  .slider .carousel .carousel-indicators {
-    width: 100%;
-    left: 0; }
   .slider .carousel p {
-    font-size: 25px; }
-  .slider .carousel span {
-    padding-bottom: 25px; } }
+    font-size: 25px; } }
 
 /*# sourceMappingURL=style.css.map */
