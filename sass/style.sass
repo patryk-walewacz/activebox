@@ -8,7 +8,7 @@ body
 	max-width: 1000px
 	margin: 0 auto
 	padding: 0 15px
-.margin-80
+.section-margin
 	margin: 80px auto
 a:link
 	text-decoration: none
@@ -111,29 +111,29 @@ a:link
 			position: relative
 			z-index: 20
 
-		.red-layer
-			width: calc(100% - 1px)
-			height: 250px
-			background: rgba(232, 69, 69, 0.9)
-			color: #fff
-			text-align: center
-			opacity: 0
-			position: absolute
-			top: 0.5px
-			left: 0.5px
-			z-index: 100
-			transition: .5s
-			&:hover
-				opacity: 1
+	.red-layer
+		width: calc(100% - 1px)
+		height: 250px
+		background: rgba(232, 69, 69, 0.9)
+		color: #fff
+		text-align: center
+		opacity: 0
+		position: absolute
+		top: 0.5px
+		left: 0.5px
+		z-index: 100
+		transition: .5s
+		&:hover
+			opacity: 1
 
-			h5
-				+font(14px, 700)
-				text-transform: uppercase
-				margin: 100px 0 0 0
+		h5
+			+font(14px, 700)
+			text-transform: uppercase
+			margin: 100px 0 0 0
 
-			p
-				+font(14px)
-				margin-top: 10px
+		p
+			+font(14px)
+			margin-top: 10px
 
 
 /* crew */
@@ -245,12 +245,13 @@ a:link
 .contact
 	background: #3a3e64
 	padding: 50px 0 90px 0
-	color: #fff
 	text-align: center
+	color: #fff
 
 	h2
 		+font(14px, 700)
 		text-transform: uppercase
+		
 
 	p
 		+font(14px)
@@ -307,6 +308,9 @@ a:link
 
 
 @media (max-width: 991px)
+	.container
+		max-width: 95%
+
 	.jumbotron
 		.jumbotron-content
 			padding: 140px 50px 0 50px
@@ -334,6 +338,9 @@ a:link
 
 
 @media (max-width: 767px)
+	.section-margin
+		margin: 60px auto
+
 	.jumbotron
 		height: auto
 
@@ -357,7 +364,7 @@ a:link
 						display: block
 						width: 150px
 						height: 1px
-						border-top: 1px dotted #fff
+						border-top: 1px dotted #77798F
 						margin: 0 auto
 
 					a
@@ -374,7 +381,7 @@ a:link
 						display: none
 
 		.jumbotron-content 
-			padding: 80px 0 40px 0
+			padding: 80px 20px 40px 20px
 			height: auto
 
 			h1
@@ -391,3 +398,36 @@ a:link
 
 			p
 				font-size: 25px
+
+	.findout
+		&:hover
+			background: #e84545
+			color: #fff
+
+	.contact
+		button
+			&:hover
+				background: #3a3e64
+				.fa
+					color: #fff
+	.crew
+		.social
+			&:hover
+				background: #fff
+				.fa
+					color: #c6cacc
+
+	.gallery
+		.red-layer
+			background: rgba(0, 0, 0, 0)
+			opacity: 1
+			text-shadow: 2px 2px 2px #000
+
+			h5
+				margin: 180px 0 0 0
+				+font(17px, 700)
+
+			p
+				margin-top: 5px
+				+font(16px)
+
