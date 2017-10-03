@@ -359,7 +359,7 @@ a:link {
   .gallery .red-layer {
     background: transparent;
     opacity: 1;
-    text-shadow: 2px 2px 2px #000; }
+    text-shadow: 1px 1px 2px #000, -1px -1px 2px #000, -1px 1px 2px #000, 1px -1px 2px #000; }
     .gallery .red-layer h5 {
       margin: 180px 0 0 0;
       font-size: 17px;
