@@ -11,9 +11,6 @@ body {
   margin: 0 auto;
   padding: 0 15px; }
 
-.section-margin {
-  margin: 80px auto; }
-
 a:link {
   text-decoration: none; }
 
@@ -78,6 +75,7 @@ a:link {
 
 /* benefits */
 .benefits {
+  margin: 80px auto;
   text-align: center; }
   .benefits [class*="col-"] {
     padding: 40px 30px; }
@@ -126,49 +124,46 @@ a:link {
     margin-top: 10px; }
 
 /* crew */
-.crew [class*="col-"] {
-  padding: 0 10px; }
-
-.crew img {
-  max-width: 100%;
-  width: 230px;
-  height: 230px;
-  object-fit: cover; }
-
-.crew h3 {
-  font-size: 22px;
-  font-weight: 400; }
-
-.crew h5 {
-  font-size: 13px;
-  font-weight: 400;
-  color: #e84545; }
-
-.crew p {
-  font-size: 14px;
-  font-weight: 400; }
-
-.crew .social {
-  display: inline-block;
-  width: 32px;
-  height: 32px;
-  background: #fff;
-  border: 1px solid #c6cacc;
-  text-align: center;
-  line-height: 32px;
-  transition: .3s; }
-  .crew .social:hover {
-    background: #c6cacc; }
-    .crew .social:hover .fa {
-      color: #fff; }
-  .crew .social a {
+.crew {
+  margin: 80px auto; }
+  .crew [class*="col-"] {
+    padding: 0 10px; }
+  .crew img {
+    max-width: 100%;
+    width: 230px;
+    height: 230px;
+    object-fit: cover; }
+  .crew h3 {
+    font-size: 22px;
+    font-weight: 400; }
+  .crew h5 {
+    font-size: 13px;
+    font-weight: 400;
+    color: #e84545; }
+  .crew p {
+    font-size: 14px;
+    font-weight: 400; }
+  .crew .social {
     display: inline-block;
+    width: 32px;
     height: 32px;
-    width: 32px; }
-    .crew .social a .fa {
-      transition: .3s;
-      color: #c6cacc;
-      font-size: 16px; }
+    background: #fff;
+    border: 1px solid #c6cacc;
+    text-align: center;
+    line-height: 32px;
+    transition: .3s; }
+    .crew .social:hover {
+      background: #c6cacc; }
+      .crew .social:hover .fa {
+        color: #fff; }
+    .crew .social a {
+      display: inline-block;
+      height: 32px;
+      width: 32px; }
+      .crew .social a .fa {
+        transition: .3s;
+        color: #c6cacc;
+        font-size: 16px; }
 
 /* slider */
 .slider {
@@ -206,6 +201,7 @@ a:link {
 
 /* download */
 .download {
+  margin: 80px auto;
   text-align: center; }
   .download h1 {
     font-size: 28px;
@@ -297,8 +293,6 @@ a:link {
       padding: 30px 15px; } }
 
 @media (max-width: 767px) {
-  .section-margin {
-    margin: 60px auto; }
   .jumbotron {
     height: auto; }
     .jumbotron nav .brand-link {
