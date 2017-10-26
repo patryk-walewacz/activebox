@@ -372,15 +372,9 @@ a:link
 					height: 40px
 					width: 300px
 					max-width: 95%
+					margin: 0 auto			
+					border-top: 1.5px solid rgba(255, 255, 255, 0.15)
 					margin: 0 auto
-					&:after
-						content: ""
-						display: block
-						width: 300px
-						max-width: 95%
-						height: 1px
-						border-top: 1px dotted #77798F
-						margin: 0 auto
 
 					a
 						display: block
@@ -391,9 +385,8 @@ a:link
 						&:hover
 							color: #fff
 
-				li:last-of-type
-					&:after
-						display: none
+				li:first-of-type
+					border: none
 
 		.jumbotron-content 
 			padding: 80px 20px 40px 20px
